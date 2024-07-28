@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href='/static/css/our_services.css'>
+{% endblock custom_css %}
+
+{% block content %}
+<div class="services-container">
+
+    <!-- Header -->
+    <h1>Our Services</h1>
+
+    <!-- Service 1: Online Polling -->
+    <div class="service">
+        <h2>Online Polling</h2>
+        <p>Our platform offers a seamless online polling experience. Whether it's for a small group decision or a large-scale survey, our tools are designed to cater to your needs. Easy creation, distribution, and results analysis are at your fingertips.</p>
+    </div>
+
+    <!-- Service 2: Custom Surveys -->
+    <div class="service">
+        <h2>Custom Surveys</h2>
+        <p>Need to gather specific data or feedback? Our custom survey tool allows you to tailor your questions, format, and design to fit your specific requirements. Plus, with our analytics dashboard, understanding the results has never been easier.</p>
+    </div>
+
+    <!-- Service 3: Secure Voting System -->
+    <div class="service">
+        <h2>Secure Voting System</h2>
+        <p>Security is our top priority. Our voting system is built with state-of-the-art encryption and security protocols, ensuring that every vote is not only counted but also protected from any potential threats or breaches.</p>
+    </div>
+
+    <!-- Service 4: Real-time Results -->
+    <div class="service">
+        <h2>Real-time Results</h2>
+        <p>Instantly see how your polls or surveys are performing with our real-time results feature. As votes come in, the results are updated in real-time, allowing for immediate insights and decision-making.</p>
+    </div>
+
+</div>
+{% endblock content %}

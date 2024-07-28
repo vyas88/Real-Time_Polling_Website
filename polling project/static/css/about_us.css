@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1, h2 {
+    border-bottom: 2px solid #f5a623;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: #f5a623;
+}
+
+.introduction, .mission-vision-values, .team {
+    margin-top: 40px;
+}
+
+.introduction p, .team p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-top: 20px;
+}
+
+.mission-vision-values h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.mission-vision-values p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.mission-vision-values ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mission-vision-values ul li {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+.mission-vision-values ul li strong {
+    color: #f5a623;
+}
+
+.team p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-top: 20px;
+}

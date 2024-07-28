@@ -1,0 +1,11 @@
+<div style="margin: 50px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; width: 300px;">
+    <h2>Newsletter</h2>
+    <p>Sign up with us!</p>
+    <form method="post" action="{% url 'accounts:subscribe' %}">
+        {% csrf_token %}
+        <label>
+            <input type="email" name="email" placeholder="Your email" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        </label>
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">SignUp</button>
+    </form>
+</div>

@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+html {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.466);
+}
+
+#home-content {
+    text-align: center;
+    padding-top: 20%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-column a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.quick-links h5 {
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin: 5px 0;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+

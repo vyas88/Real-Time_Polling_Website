@@ -1,0 +1,31 @@
+.privacy-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}

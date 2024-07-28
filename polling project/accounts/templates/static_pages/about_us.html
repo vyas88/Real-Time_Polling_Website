@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+    <link rel="stylesheet" href='/static/css/about_us.css'/>
+{% endblock custom_css %}
+
+{% block content %}
+<div class="about-container">
+
+    <h1>About Us</h1>
+
+    <section class="introduction">
+        <p>Welcome to our online voting platform, where every voice matters. Our aim is to provide an easy-to-use, secure, and efficient way for individuals to express their opinions on various matters. Voting is an essential right, and we are here to ensure that right is exercised seamlessly.</p>
+    </section>
+
+    <section class="mission-vision-values">
+        <h2>Mission</h2>
+        <p>To empower individuals by providing a platform where their opinions can be voiced without barriers.</p>
+
+        <h2>Vision</h2>
+        <p>To become the leading online voting platform recognized for its integrity, security, and user-friendliness.</p>
+
+        <h2>Values</h2>
+        <ul>
+            <li><strong>Integrity</strong>: Ensuring transparency and honesty in all our operations.</li>
+            <li><strong>Security</strong>: Protecting the data and privacy of our users is our utmost priority.</li>
+            <li><strong>Inclusivity</strong>: Creating a platform accessible to everyone, regardless of their background.</li>
+            <li><strong>Innovation</strong>: Constantly evolving and improving to meet the needs of our users.</li>
+        </ul>
+    </section>
+
+    <section class="team">
+        <h2>Team</h2>
+         <p><strong>Khushman Minocha</strong>: The driving force behind this platform. With a vision to enhance the online voting experience,  has been instrumental in bringing this platform to life.</p>
+         <p><strong>Mridul Sharma</strong>: The driving force behind this platform. With a vision to enhance the online voting experience,  has been instrumental in bringing this platform to life.</p>
+        <p><strong>Mahir Dua</strong>: The driving force behind this platform. With a vision to enhance the online voting experience,  has been instrumental in bringing this platform to life.</p>
+    </section>
+
+</div>
+{% endblock content %}

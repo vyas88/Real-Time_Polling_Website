@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+{% endblock custom_css %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="home-content">
+                <h1>Poll with Us !</h1>
+                <h3>Your voice can be heard through your votes!</h3>
+                <hr>
+                <a class="btn btn-light btn-lg" href="{% url 'polls:list' %}" role="button">Lets make a change!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div class="footer-container">
+    <!-- Column 1 for Static Links -->
+    <div class="footer-column">
+           <h5>Company</h5>
+        <a href="{% url 'accounts:about_us' %}">About Us</a>
+        <a href="{% url 'accounts:our_services' %}">Our Services</a>
+    </div>
+    <!-- Column 2 for Static Links -->
+    <div class="footer-column">
+        <h5>Get to Know us!</h5>
+        <a href="{% url 'accounts:privacy_policy' %}">Privacy & Policy</a>
+        <a href="{% url 'accounts:contact' %}">Get in Touch</a>
+    </div>
+    <!-- Column 3 for Quick Links -->
+    <div class="footer-column quick-links">
+        <h5>Quick Action</h5>
+        <ul>
+            <li><a href="{% url 'accounts:register' %}">Registration</a></li>
+            <li><a href="{% url 'accounts:login' %}">Login</a></li>
+        </ul>
+    </div>
+    <!-- Newsletter Form -->
+    <div class="footer-column newsletter">
+        {% include "accounts/_subscribe_form.html" %}
+    </div>
+</div>
+{% endblock content %}
+
